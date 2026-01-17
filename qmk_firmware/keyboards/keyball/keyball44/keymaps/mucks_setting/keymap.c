@@ -73,9 +73,11 @@ void oledkit_render_info_user(void) {
 #ifdef COMBO_ENABLE
 const uint16_t PROGMEM wr_jp[]   = {KC_W, KC_R, COMBO_END};
 const uint16_t PROGMEM ucm_en[]  = {KC_U, KC_COMM, COMBO_END};
+const uint16_t PROGMEM dm_btn1[] = {KC_D, KC_M, COMBO_END};
 
 combo_t key_combos[] = {
   COMBO(wr_jp,  KC_LNG1), // W + R  -> 日本語モード
   COMBO(ucm_en, KC_LNG2), // U + ,  -> 英数モード
+  COMBO(dm_btn1, KC_BTN1), // D + M  -> マウス左クリック
 };
 #endif
